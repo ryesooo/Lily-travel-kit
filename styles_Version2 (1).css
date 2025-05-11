@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  margin: 0;
+  font-family: 'Comic Neue', cursive, sans-serif;
+  background: linear-gradient(135deg, #70e1f5, #ffd194);
+  display: flex;
+  height: 100vh;
+  max-height: 600px;
+  max-width: 350px;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 15px;
+  overflow: hidden;
+  color: #34495e;
+}
+h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.phrase-box {
+  background: #fff9e6;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+  font-size: 1.6rem;
+  user-select: none;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttons {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  max-width: 320px;
+  justify-content: center;
+  margin-top: 10px;
+}
+button {
+  flex: 1;
+  background-color: #3ab795;
+  color: white;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 12px;
+  padding: 15px 0;
+  font-weight: 700;
+  box-shadow: 0 6px #2f9276;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+button:active {
+  box-shadow: 0 2px #2f9276;
+  transform: translateY(4px);
+}
+button:disabled {
+  background-color: #a1c9b9;
+  box-shadow: none;
+  cursor: default;
+}
+#pronounceBtn {
+  background: #f39c12;
+  box-shadow: 0 6px #d67d0e;
+}
+#pronounceBtn:active {
+  box-shadow: 0 2px #d67d0e;
+}
+#nextBtn {
+  background: #2980b9;
+  box-shadow: 0 6px #216091;
+}
+#nextBtn:active {
+  box-shadow: 0 2px #216091;
+}
+.result {
+  background: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  width: 100%;
+  max-width: 320px;
+  font-size: 1.2rem;
+  min-height: 90px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  color: #2c3e50;
+  white-space: pre-line;
+}
+.score {
+  font-weight: 900;
+  font-size: 2.2rem;
+  color: #27ae60;
+  margin-top: 8px;
+}
+@media (max-width: 400px) {
+  body {
+    font-size: 14px;
+    padding: 15px 10px;
+  }
+  .phrase-box {
+    font-size: 1.3rem;
+    min-height: 75px;
+    padding: 15px;
+  }
+  button {
+    font-size: 1.1rem;
+    padding: 12px 0;
+  }
+  .result {
+    font-size: 1.1rem;
+    min-height: 80px;
+  }
+}
